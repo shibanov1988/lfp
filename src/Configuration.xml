@@ -250,6 +250,8 @@
 			<CommonModule>ЛФПСервер</CommonModule>
 			<Catalog>Пользователи</Catalog>
 			<Constant>ТекущийПользователь</Constant>
+			<Catalog>Валюты</Catalog>
+			<Constant>ОсновнаяВалюта</Constant>
 			<Catalog>Цели</Catalog>
 			<Catalog>КошелькиИСчета</Catalog>
 			<Catalog>Инвестиции</Catalog>
@@ -260,12 +262,12 @@
 			<Document>ПлановаяОперация</Document>
 			<Enum>ПриходРасход</Enum>
 			<Enum>Периодичность</Enum>
-			<Enum>Валюта</Enum>
 			<DataProcessor>ЛичныйФинансовыйПлан</DataProcessor>
 			<DataProcessor>СозданиеПлановыхОпераций</DataProcessor>
 			<InformationRegister>ДостижениеЦелей</InformationRegister>
 			<InformationRegister>Календарь</InformationRegister>
 			<InformationRegister>ДоходностьПоИнвестициям</InformationRegister>
+			<InformationRegister>КурсыВалют</InformationRegister>
 			<AccumulationRegister>Оборот</AccumulationRegister>
 			<AccumulationRegister>ПлановыеДвижения</AccumulationRegister>
 		</ChildObjects>

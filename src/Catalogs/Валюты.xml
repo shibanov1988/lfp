@@ -1,38 +1,38 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Catalog uuid="2570ba65-c16c-4c07-89a1-449ae34f0f41">
+	<Catalog uuid="6aabdc72-0d3b-4e1a-b44a-0e566f3f0dfb">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.КошелькиИСчета" category="Object">
-				<xr:TypeId>99623370-8746-4501-aec8-93c3479b1191</xr:TypeId>
-				<xr:ValueId>45346f09-9b99-4924-a7aa-1f6fa91bdc2c</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Валюты" category="Object">
+				<xr:TypeId>69e2333a-6bea-4b4b-be86-4b1b8506c89e</xr:TypeId>
+				<xr:ValueId>17714a17-3c10-4949-90fb-9907e41105d3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.КошелькиИСчета" category="Ref">
-				<xr:TypeId>2b8608d7-6842-428a-a0fb-eaa1950133ef</xr:TypeId>
-				<xr:ValueId>339e1cc4-5f92-48bd-adf3-77256b467571</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Валюты" category="Ref">
+				<xr:TypeId>b62e4d9c-f60f-4e15-ad9c-f7f8dd90583a</xr:TypeId>
+				<xr:ValueId>c66d9ef1-05c1-4aef-9803-de0495231751</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.КошелькиИСчета" category="Selection">
-				<xr:TypeId>2a6be255-761e-4584-83b1-c80cef9624d5</xr:TypeId>
-				<xr:ValueId>c455fee2-18d4-4d01-9c4b-a1111bcacdcc</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Валюты" category="Selection">
+				<xr:TypeId>151da51f-31f6-4818-b2a5-2540bad07006</xr:TypeId>
+				<xr:ValueId>fc0e0dd0-c151-4de3-99d9-e587da8b4383</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.КошелькиИСчета" category="List">
-				<xr:TypeId>5f616376-abbf-4902-a85a-91815ac5adcd</xr:TypeId>
-				<xr:ValueId>b3eec752-2049-4a89-92bd-3b292bc8784c</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Валюты" category="List">
+				<xr:TypeId>f0f44961-5889-43bf-9b2f-40be4ccdfab2</xr:TypeId>
+				<xr:ValueId>f0cd4b85-0bed-44d4-acbb-0aeea8c6d911</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.КошелькиИСчета" category="Manager">
-				<xr:TypeId>5bc88f13-17a1-4d55-9be5-7bd25472bb94</xr:TypeId>
-				<xr:ValueId>5ec52d76-edd7-4c70-b88a-05cfdec2fb68</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Валюты" category="Manager">
+				<xr:TypeId>21900274-2e4c-4544-a016-392715318d64</xr:TypeId>
+				<xr:ValueId>6a062f94-c3e4-43ae-b894-ccd599ff34b1</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>КошелькиИСчета</Name>
+			<Name>Валюты</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Кошельки и счета</v8:content>
+					<v8:content>Валюты</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
-			<Hierarchical>true</Hierarchical>
+			<Comment>Справочник валют. Рубль (Код=RUB) — опорная валюта для хранения курсов (РегистрСведений.КурсыВалют всегда хранит курс к рублю, его курс к самому себе всегда равен 1). Какая валюта основная для отчётности — задаёт Константа.ОсновнаяВалюта.</Comment>
+			<Hierarchical>false</Hierarchical>
 			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
 			<LimitLevelCount>false</LimitLevelCount>
 			<LevelCount>2</LevelCount>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>25</DescriptionLength>
+			<DescriptionLength>50</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -54,8 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.КошелькиИСчета.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.КошелькиИСчета.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Валюты.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Валюты.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -78,12 +78,7 @@
 			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
-			<ExtendedListPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Кошельки, банковские карточки, счета</v8:content>
-				</v8:item>
-			</ExtendedListPresentation>
+			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
@@ -92,18 +87,22 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="586ed28d-f90d-4ab3-bafc-dc6959ec374f">
+			<Attribute uuid="0eb589f0-f99c-4083-a23c-1f926f5ca431">
 				<Properties>
-					<Name>Валюта</Name>
+					<Name>Код</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Валюта</v8:content>
+							<v8:content>Код</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Валюта, в которой ведётся этот кошелёк/счёт. Подтягивается в документ ИзменениеБаланса при выборе кошелька.</Comment>
+					<Comment>Буквенный код (ISO 4217, например RUB, USD). RUB зарезервирован как опорная валюта для курсов.</Comment>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Fixed</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -116,7 +115,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xs:string"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>

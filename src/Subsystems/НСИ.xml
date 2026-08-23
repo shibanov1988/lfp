@@ -17,6 +17,8 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КурсыВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Цели</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Календарь</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДостижениеЦелей</xr:Item>
