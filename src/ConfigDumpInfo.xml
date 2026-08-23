@@ -83,10 +83,10 @@
 			<Metadata name="InformationRegister.ДостижениеЦелей.Resource.Сумма" id="7cae78b9-ceb0-4235-9536-42fe93942c7c"/>
 			<Metadata name="InformationRegister.ДостижениеЦелей.Dimension.Цель" id="a96e9d08-2f94-4d61-bf5a-c86bb5263943"/>
 		</Metadata>
-		<Metadata name="InformationRegister.ДоходностьПоИнвенстициям" id="52cba7e7-778c-4250-baae-b3ea2bd7d6bc" configVersion="e1179ac038dce949a71c6f4b84956c9c00000000">
-			<Metadata name="InformationRegister.ДоходностьПоИнвенстициям.Dimension.Инвестиция" id="574b4165-cb1c-42fd-8b1b-2c6a85e81c73"/>
-			<Metadata name="InformationRegister.ДоходностьПоИнвенстициям.Resource.Проценты" id="ae7c7a6d-c557-4231-a5fd-d99ed734419e"/>
-			<Metadata name="InformationRegister.ДоходностьПоИнвенстициям.Resource.Пополнение" id="b17c049b-0fd1-4da5-aec8-47e8bae5cf47"/>
+		<Metadata name="InformationRegister.ДоходностьПоИнвестициям" id="52cba7e7-778c-4250-baae-b3ea2bd7d6bc" configVersion="e1179ac038dce949a71c6f4b84956c9c00000000">
+			<Metadata name="InformationRegister.ДоходностьПоИнвестициям.Dimension.Инвестиция" id="574b4165-cb1c-42fd-8b1b-2c6a85e81c73"/>
+			<Metadata name="InformationRegister.ДоходностьПоИнвестициям.Resource.Проценты" id="ae7c7a6d-c557-4231-a5fd-d99ed734419e"/>
+			<Metadata name="InformationRegister.ДоходностьПоИнвестициям.Resource.Пополнение" id="b17c049b-0fd1-4da5-aec8-47e8bae5cf47"/>
 		</Metadata>
 		<Metadata name="InformationRegister.Календарь" id="6dbea18d-9712-415b-b1a3-7d7312a65366" configVersion="173a03097029b6458b7194291733c33900000000">
 			<Metadata name="InformationRegister.Календарь.Dimension.ДатаКалендаря" id="378c3e66-231e-457c-819b-e14ecd0d8546"/>

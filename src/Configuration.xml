@@ -247,6 +247,8 @@
 			<Language>Русский</Language>
 			<Subsystem>НСИ</Subsystem>
 			<Subsystem>ЛФП</Subsystem>
+			<CommonModule>ЛФПСервер</CommonModule>
+			<Constant>ТекущийПользователь</Constant>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Цели</Catalog>
 			<Catalog>КошелькиИСчета</Catalog>
@@ -259,7 +261,7 @@
 			<DataProcessor>СозданиеПлановыхОпераций</DataProcessor>
 			<InformationRegister>ДостижениеЦелей</InformationRegister>
 			<InformationRegister>Календарь</InformationRegister>
-			<InformationRegister>ДоходностьПоИнвенстициям</InformationRegister>
+			<InformationRegister>ДоходностьПоИнвестициям</InformationRegister>
 			<AccumulationRegister>Оборот</AccumulationRegister>
 			<AccumulationRegister>ПлановыеДвижения</AccumulationRegister>
 		</ChildObjects>

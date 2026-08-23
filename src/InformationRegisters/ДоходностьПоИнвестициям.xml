@@ -2,41 +2,41 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<InformationRegister uuid="52cba7e7-778c-4250-baae-b3ea2bd7d6bc">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ДоходностьПоИнвенстициям" category="Record">
+			<xr:GeneratedType name="InformationRegisterRecord.ДоходностьПоИнвестициям" category="Record">
 				<xr:TypeId>450cebf8-9173-4a39-8017-8e23d1aaab8a</xr:TypeId>
 				<xr:ValueId>8de6ea69-2733-47a1-addf-90566d6911f3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ДоходностьПоИнвенстициям" category="Manager">
+			<xr:GeneratedType name="InformationRegisterManager.ДоходностьПоИнвестициям" category="Manager">
 				<xr:TypeId>c92328f9-e518-4334-a4ab-757df8eab2cc</xr:TypeId>
 				<xr:ValueId>3efc7c38-514a-474b-9cae-3e948b5b95a4</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ДоходностьПоИнвенстициям" category="Selection">
+			<xr:GeneratedType name="InformationRegisterSelection.ДоходностьПоИнвестициям" category="Selection">
 				<xr:TypeId>9115c2cd-1960-44cc-a60f-86e5e38df313</xr:TypeId>
 				<xr:ValueId>8881c23d-1cb1-4e63-9021-3086af2de705</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ДоходностьПоИнвенстициям" category="List">
+			<xr:GeneratedType name="InformationRegisterList.ДоходностьПоИнвестициям" category="List">
 				<xr:TypeId>d5b3dd75-655c-4dcb-8b3e-8d4c9788c4ec</xr:TypeId>
 				<xr:ValueId>a117a885-3cde-4d29-bbe1-e46340790b61</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ДоходностьПоИнвенстициям" category="RecordSet">
+			<xr:GeneratedType name="InformationRegisterRecordSet.ДоходностьПоИнвестициям" category="RecordSet">
 				<xr:TypeId>4d2bcaba-8066-4e8c-83d9-f16870531502</xr:TypeId>
 				<xr:ValueId>be06a642-5954-41b4-9002-644d82b1c9a8</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ДоходностьПоИнвенстициям" category="RecordKey">
+			<xr:GeneratedType name="InformationRegisterRecordKey.ДоходностьПоИнвестициям" category="RecordKey">
 				<xr:TypeId>255d5cf0-133b-42e9-9bdb-ba4805ed0faa</xr:TypeId>
 				<xr:ValueId>1665294a-f905-495e-b89d-2289d0bda1d2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ДоходностьПоИнвенстициям" category="RecordManager">
+			<xr:GeneratedType name="InformationRegisterRecordManager.ДоходностьПоИнвестициям" category="RecordManager">
 				<xr:TypeId>903251ba-69d8-4cb0-a056-040a09cb6da4</xr:TypeId>
 				<xr:ValueId>bdc1c06b-3cb4-47ca-b58b-82259673c1d2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ДоходностьПоИнвенстициям</Name>
+			<Name>ДоходностьПоИнвестициям</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Доходность по инвенстициям</v8:content>
+					<v8:content>Доходность по инвестициям</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

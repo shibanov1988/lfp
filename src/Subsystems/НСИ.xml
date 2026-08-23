@@ -22,7 +22,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДостижениеЦелей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КошелькиИСчета</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Инвестиции</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоходностьПоИнвенстициям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоходностьПоИнвестициям</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеБаланса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиДДС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПлановаяОперация</xr:Item>
