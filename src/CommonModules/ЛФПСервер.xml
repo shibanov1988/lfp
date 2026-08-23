@@ -15,9 +15,6 @@
 			<Server>true</Server>
 			<ExternalConnection>false</ExternalConnection>
 			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
-			<ClientMobileApplication>false</ClientMobileApplication>
-			<MobileAppServer>false</MobileAppServer>
-			<MobileClient>false</MobileClient>
 			<ServerCall>false</ServerCall>
 			<Privileged>false</Privileged>
 			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
