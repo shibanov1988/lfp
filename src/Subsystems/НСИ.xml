@@ -26,6 +26,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеБаланса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиДДС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПлановаяОперация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Получатели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПлановыеПравила</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеПлановыхОпераций</xr:Item>
 			</Content>
 		</Properties>

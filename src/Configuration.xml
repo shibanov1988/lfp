@@ -254,9 +254,13 @@
 			<Catalog>КошелькиИСчета</Catalog>
 			<Catalog>Инвестиции</Catalog>
 			<Catalog>СтатьиДДС</Catalog>
+			<Catalog>Получатели</Catalog>
+			<Catalog>ПлановыеПравила</Catalog>
 			<Document>ИзменениеБаланса</Document>
 			<Document>ПлановаяОперация</Document>
 			<Enum>ПриходРасход</Enum>
+			<Enum>Периодичность</Enum>
+			<Enum>Валюта</Enum>
 			<DataProcessor>ЛичныйФинансовыйПлан</DataProcessor>
 			<DataProcessor>СозданиеПлановыхОпераций</DataProcessor>
 			<InformationRegister>ДостижениеЦелей</InformationRegister>
