@@ -1,0 +1,21 @@
+# Copy this file to Update-1C.local.txt (same folder) and fill it in for
+# your machine. Update-1C.local.txt is in .gitignore and never committed -
+# it can contain your database password.
+#
+# Plain "Key=Value" format on purpose (not a .ps1) so it can safely contain
+# Cyrillic paths without depending on how your editor saves file encoding.
+
+# Path to 1cv8.exe of your installed platform version.
+DesignerExe=C:\Program Files\1cv8\8.3.27.1644\bin\1cv8.exe
+
+# Connection string as ONE token, no space after /F or /S.
+# File infobase:
+ConnectionString=/F"C:\Users\1\Documents\ЛФП"
+# Server infobase - use this format instead of the line above:
+# ConnectionString=/SMyServer\LFP
+
+# Infobase user. Leave both empty if there is no 1C password authentication
+# configured (no user list, or Windows/OS authentication is used) - then /N
+# and /P are simply left out of the command line.
+IbUser=
+IbPassword=
