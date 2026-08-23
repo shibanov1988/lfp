@@ -248,8 +248,8 @@
 			<Subsystem>НСИ</Subsystem>
 			<Subsystem>ЛФП</Subsystem>
 			<CommonModule>ЛФПСервер</CommonModule>
-			<Constant>ТекущийПользователь</Constant>
 			<Catalog>Пользователи</Catalog>
+			<Constant>ТекущийПользователь</Constant>
 			<Catalog>Цели</Catalog>
 			<Catalog>КошелькиИСчета</Catalog>
 			<Catalog>Инвестиции</Catalog>
