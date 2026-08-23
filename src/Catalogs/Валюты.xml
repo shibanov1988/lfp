@@ -31,7 +31,7 @@
 					<v8:content>Валюты</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Справочник валют. Рубль (Код=RUB) — опорная валюта для хранения курсов (РегистрСведений.КурсыВалют всегда хранит курс к рублю, его курс к самому себе всегда равен 1). Какая валюта основная для отчётности — задаёт Константа.ОсновнаяВалюта.</Comment>
+			<Comment>Справочник валют — структура как в БСП (буквенный код в стандартном реквизите Код, короткое наименование в Наименовании, полное — отдельным реквизитом). Рубль (Код=RUB) — опорная валюта для хранения курсов (РегистрСведений.КурсыВалют всегда хранит курс к рублю, его курс к самому себе всегда равен 1). Какая валюта основная для отчётности — задаёт Константа.ОсновнаяВалюта.</Comment>
 			<Hierarchical>false</Hierarchical>
 			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
 			<LimitLevelCount>false</LimitLevelCount>
@@ -40,10 +40,10 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>9</CodeLength>
-			<DescriptionLength>50</DescriptionLength>
+			<CodeLength>3</CodeLength>
+			<DescriptionLength>10</DescriptionLength>
 			<CodeType>String</CodeType>
-			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeAllowedLength>Fixed</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>
@@ -87,21 +87,21 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="0eb589f0-f99c-4083-a23c-1f926f5ca431">
+			<Attribute uuid="436aff7e-ce55-4745-940c-26f5a0628144">
 				<Properties>
-					<Name>КодВалюты</Name>
+					<Name>НаименованиеПолное</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код валюты</v8:content>
+							<v8:content>Наименование полное</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Буквенный код (ISO 4217, например RUB, USD). RUB зарезервирован как опорная валюта для курсов. Называется не "Код", т.к. это имя уже занято стандартным реквизитом справочника (автономер).</Comment>
+					<Comment>Полное название валюты, например "Российский рубль". Короткое (например "руб.", "USD") — в стандартном реквизите Наименование; буквенный код ISO 4217 (RUB, USD) — в стандартном реквизите Код.</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>3</v8:Length>
-							<v8:AllowedLength>Fixed</v8:AllowedLength>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -116,6 +116,46 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="29ef7698-9ddc-4d51-afba-764adb032735">
+				<Properties>
+					<Name>ЗагружаетсяИзИнтернета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загружается из интернета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Задел на будущее (как в БСП): признак, что курс для этой валюты можно подгружать автоматически (например с ЦБ РФ), а не только вводить вручную. Сейчас на поведение не влияет — загрузка не реализована.</Comment>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:boolean">false</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
