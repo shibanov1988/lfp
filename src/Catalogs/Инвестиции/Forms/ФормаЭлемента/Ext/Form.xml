@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Кошелек" id="49">
+			<DataPath>Объект.Кошелек</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КошелекКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="КошелекРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДатаНачала" id="10">
+			<DataPath>Объект.ДатаНачала</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаОкончания" id="13">
+			<DataPath>Объект.ДатаОкончания</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПроцентнаяСтавка" id="16">
+			<DataPath>Объект.ПроцентнаяСтавка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПроцентнаяСтавкаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПроцентнаяСтавкаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Сумма" id="19">
+			<DataPath>Объект.Сумма</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ЕжемесячноеПополнение" id="22">
+			<DataPath>Объект.ЕжемесячноеПополнение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЕжемесячноеПополнениеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ЕжемесячноеПополнениеРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<Table name="ГрафикПлатежей" id="25">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ГрафикПлатежей</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ГрафикПлатежейКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ГрафикПлатежейКоманднаяПанель" id="27">
+				<ChildItems>
+					<Button name="ГрафикПлатежейЗаполнитьГрафикПлатежей" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьГрафикПлатежей</CommandName>
+						<ExtendedTooltip name="ГрафикПлатежейЗаполнитьГрафикПлатежейРасширеннаяПодсказка" id="48"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ГрафикПлатежейРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ГрафикПлатежейСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ГрафикПлатежей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ГрафикПлатежейСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ГрафикПлатежейСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ГрафикПлатежейСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ГрафикПлатежей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ГрафикПлатежейСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ГрафикПлатежейСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ГрафикПлатежейУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ГрафикПлатежей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ГрафикПлатежейУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ГрафикПлатежейУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ГрафикПлатежейНомерСтроки" id="38">
+					<DataPath>Объект.ГрафикПлатежей.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГрафикПлатежейНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ГрафикПлатежейНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ГрафикПлатежейДатаПлатежа" id="41">
+					<DataPath>Объект.ГрафикПлатежей.ДатаПлатежа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГрафикПлатежейДатаПлатежаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ГрафикПлатежейДатаПлатежаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ГрафикПлатежейСумма" id="44">
+					<DataPath>Объект.ГрафикПлатежей.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ГрафикПлатежей.TotalСумма</FooterDataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГрафикПлатежейСуммаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ГрафикПлатежейСуммаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ГрафикПлатежейБаланс" id="52">
+					<DataPath>Объект.ГрафикПлатежей.Проценты</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ГрафикПлатежей.TotalПроценты</FooterDataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГрафикПлатежейБалансКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ГрафикПлатежейБалансРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Инвестиции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьГрафикПлатежей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить график платежей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить график платежей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьГрафикПлатежей</Action>
+		</Command>
+	</Commands>
+</Form>
