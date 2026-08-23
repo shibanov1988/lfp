@@ -1,0 +1,6 @@
+#!/bin/sh
+# Срабатывает после git pull/merge. ORIG_HEAD — состояние до слияния.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+OLD_REV="$(git rev-parse ORIG_HEAD 2>/dev/null || echo "")"
+NEW_REV="$(git rev-parse HEAD)"
+"$DIR/_run-if-src-changed.sh" "$OLD_REV" "$NEW_REV"

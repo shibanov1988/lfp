@@ -1,0 +1,13 @@
+#!/bin/sh
+# Срабатывает после git checkout. Аргументы: <старый HEAD> <новый HEAD> <флаг переключения ветки>.
+# Интересует только переключение веток (флаг=1), не checkout отдельных файлов.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+OLD_REV="$1"
+NEW_REV="$2"
+BRANCH_CHECKOUT="$3"
+
+if [ "$BRANCH_CHECKOUT" != "1" ]; then
+	exit 0
+fi
+
+"$DIR/_run-if-src-changed.sh" "$OLD_REV" "$NEW_REV"
