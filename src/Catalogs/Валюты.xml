@@ -89,14 +89,14 @@
 		<ChildObjects>
 			<Attribute uuid="0eb589f0-f99c-4083-a23c-1f926f5ca431">
 				<Properties>
-					<Name>Код</Name>
+					<Name>КодВалюты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код</v8:content>
+							<v8:content>Код валюты</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Буквенный код (ISO 4217, например RUB, USD). RUB зарезервирован как опорная валюта для курсов.</Comment>
+					<Comment>Буквенный код (ISO 4217, например RUB, USD). RUB зарезервирован как опорная валюта для курсов. Называется не "Код", т.к. это имя уже занято стандартным реквизитом справочника (автономер).</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
