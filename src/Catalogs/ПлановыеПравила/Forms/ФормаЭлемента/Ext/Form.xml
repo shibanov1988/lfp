@@ -28,11 +28,11 @@
 			<ContextMenu name="ПолучательКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ПолучательРасширеннаяПодсказка" id="9"/>
 		</InputField>
-		<UsualGroup name="ГруппаСуммаВалюта" id="24">
+		<UsualGroup name="ГруппаСуммаВалюта" id="30">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаСуммаВалютаРасширеннаяПодсказка" id="25"/>
+			<ExtendedTooltip name="ГруппаСуммаВалютаРасширеннаяПодсказка" id="31"/>
 			<ChildItems>
 				<InputField name="Сумма" id="10">
 					<DataPath>Объект.Сумма</DataPath>
@@ -48,30 +48,67 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Расписание" id="16">
-			<DataPath>Расписание</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Расписание</v8:content>
-				</v8:item>
-			</Title>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="РасписаниеКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="18"/>
-		</InputField>
-		<CheckBoxField name="Активно" id="19">
+		<UsualGroup name="ГруппаРасписание" id="32">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасписаниеРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="Периодичность" id="16">
+					<DataPath>Объект.Периодичность</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодичностьКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПериодичностьРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">ПериодичностьПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДеньМесяца" id="19">
+					<DataPath>Объект.ДеньМесяца</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДеньМесяцаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДеньМесяцаРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="Месяц" id="22">
+					<DataPath>Объект.Месяц</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МесяцКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПериодДействия" id="34">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодДействияРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="25">
+					<DataPath>Объект.ДатаНачала</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="28">
+					<DataPath>Объект.ДатаОкончания</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Активно" id="37">
 			<DataPath>Объект.Активно</DataPath>
 			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="АктивноКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="АктивноРасширеннаяПодсказка" id="21"/>
+			<ContextMenu name="АктивноКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="АктивноРасширеннаяПодсказка" id="39"/>
 		</CheckBoxField>
-		<InputField name="Комментарий" id="22">
+		<InputField name="Комментарий" id="40">
 			<DataPath>Объект.Комментарий</DataPath>
 			<MultiLine>true</MultiLine>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КомментарийКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="26"/>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="42"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -81,17 +118,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
-		</Attribute>
-		<Attribute name="Расписание" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Расписание</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ScheduledJobSchedule</v8:Type>
-			</Type>
 		</Attribute>
 	</Attributes>
 </Form>

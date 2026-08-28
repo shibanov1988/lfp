@@ -261,6 +261,7 @@
 			<Document>ИзменениеБаланса</Document>
 			<Document>ПлановаяОперация</Document>
 			<Enum>ПриходРасход</Enum>
+			<Enum>Периодичность</Enum>
 			<DataProcessor>ЛичныйФинансовыйПлан</DataProcessor>
 			<DataProcessor>СозданиеПлановыхОпераций</DataProcessor>
 			<InformationRegister>ДостижениеЦелей</InformationRegister>
