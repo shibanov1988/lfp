@@ -263,6 +263,7 @@
 			<Enum>ПриходРасход</Enum>
 			<DataProcessor>ЛичныйФинансовыйПлан</DataProcessor>
 			<DataProcessor>СозданиеПлановыхОпераций</DataProcessor>
+			<DataProcessor>ПлатежныйКалендарь</DataProcessor>
 			<InformationRegister>ДостижениеЦелей</InformationRegister>
 			<InformationRegister>Календарь</InformationRegister>
 			<InformationRegister>ДоходностьПоИнвестициям</InformationRegister>
