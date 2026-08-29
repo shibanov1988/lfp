@@ -32,7 +32,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="ТаблицаПоСтатьям" id="9">
-			<DataPath>ТаблицаПоСтатьям</DataPath>
+			<DataPath>Объект.ТаблицаПоСтатьям</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -44,19 +44,19 @@
 			<AutoMaxHeight>false</AutoMaxHeight>
 			<ChildItems>
 				<InputField name="ТаблицаПоСтатьямСтатьяДДС" id="10">
-					<DataPath>ТаблицаПоСтатьям.СтатьяДДС</DataPath>
+					<DataPath>Объект.ТаблицаПоСтатьям.СтатьяДДС</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаПоСтатьямСтатьяДДСКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ТаблицаПоСтатьямСтатьяДДСРасширеннаяПодсказка" id="12"/>
 				</InputField>
 				<InputField name="ТаблицаПоСтатьямТип" id="13">
-					<DataPath>ТаблицаПоСтатьям.Тип</DataPath>
+					<DataPath>Объект.ТаблицаПоСтатьям.Тип</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаПоСтатьямТипКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ТаблицаПоСтатьямТипРасширеннаяПодсказка" id="15"/>
 				</InputField>
 				<InputField name="ТаблицаПоСтатьямСумма" id="16">
-					<DataPath>ТаблицаПоСтатьям.Сумма</DataPath>
+					<DataPath>Объект.ТаблицаПоСтатьям.Сумма</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаПоСтатьямСуммаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ТаблицаПоСтатьямСуммаРасширеннаяПодсказка" id="18"/>
@@ -66,7 +66,7 @@
 			<ExtendedTooltip name="ТаблицаПоСтатьямРасширеннаяПодсказка" id="20"/>
 		</Table>
 		<Table name="ТаблицаОпераций" id="21">
-			<DataPath>ТаблицаОпераций</DataPath>
+			<DataPath>Объект.ТаблицаОпераций</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -78,37 +78,37 @@
 			<AutoMaxHeight>false</AutoMaxHeight>
 			<ChildItems>
 				<InputField name="ТаблицаОперацийДата" id="22">
-					<DataPath>ТаблицаОпераций.Дата</DataPath>
+					<DataPath>Объект.ТаблицаОпераций.Дата</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаОперацийДатаКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ТаблицаОперацийДатаРасширеннаяПодсказка" id="24"/>
 				</InputField>
 				<InputField name="ТаблицаОперацийСтатьяДДС" id="25">
-					<DataPath>ТаблицаОпераций.СтатьяДДС</DataPath>
+					<DataPath>Объект.ТаблицаОпераций.СтатьяДДС</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаОперацийСтатьяДДСКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="ТаблицаОперацийСтатьяДДСРасширеннаяПодсказка" id="27"/>
 				</InputField>
 				<InputField name="ТаблицаОперацийПолучатель" id="28">
-					<DataPath>ТаблицаОпераций.Получатель</DataPath>
+					<DataPath>Объект.ТаблицаОпераций.Получатель</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаОперацийПолучательКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ТаблицаОперацийПолучательРасширеннаяПодсказка" id="30"/>
 				</InputField>
 				<InputField name="ТаблицаОперацийПриход" id="31">
-					<DataPath>ТаблицаОпераций.Приход</DataPath>
+					<DataPath>Объект.ТаблицаОпераций.Приход</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаОперацийПриходКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ТаблицаОперацийПриходРасширеннаяПодсказка" id="33"/>
 				</InputField>
 				<InputField name="ТаблицаОперацийРасход" id="34">
-					<DataPath>ТаблицаОпераций.Расход</DataPath>
+					<DataPath>Объект.ТаблицаОпераций.Расход</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаОперацийРасходКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="ТаблицаОперацийРасходРасширеннаяПодсказка" id="36"/>
 				</InputField>
 				<InputField name="ТаблицаОперацийОстаток" id="37">
-					<DataPath>ТаблицаОпераций.Остаток</DataPath>
+					<DataPath>Объект.ТаблицаОпераций.Остаток</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаОперацийОстатокКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ТаблицаОперацийОстатокРасширеннаяПодсказка" id="39"/>
@@ -152,94 +152,6 @@
 					<v8:DateFractions>Date</v8:DateFractions>
 				</v8:DateQualifiers>
 			</Type>
-		</Attribute>
-		<Attribute name="ТаблицаОпераций" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Календарь платежей</v8:content>
-				</v8:item>
-			</Title>
-			<Columns>
-				<Column name="Дата" id="1">
-					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
-						</v8:DateQualifiers>
-					</Type>
-				</Column>
-				<Column name="СтатьяДДС" id="2">
-					<Type>
-						<v8:Type>cfg:CatalogRef.СтатьиДДС</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Получатель" id="3">
-					<Type>
-						<v8:Type>cfg:CatalogRef.Получатели</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Приход" id="4">
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>12</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-				<Column name="Расход" id="5">
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>12</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-				<Column name="Остаток" id="6">
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>12</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-			</Columns>
-		</Attribute>
-		<Attribute name="ТаблицаПоСтатьям" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Структура доходов и расходов</v8:content>
-				</v8:item>
-			</Title>
-			<Columns>
-				<Column name="СтатьяДДС" id="1">
-					<Type>
-						<v8:Type>cfg:CatalogRef.СтатьиДДС</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Тип" id="2">
-					<Type>
-						<v8:Type>cfg:EnumRef.ПриходРасход</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Сумма" id="3">
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>12</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-			</Columns>
 		</Attribute>
 	</Attributes>
 </Form>
