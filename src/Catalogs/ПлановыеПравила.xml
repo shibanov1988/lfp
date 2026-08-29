@@ -204,7 +204,7 @@
 					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
+					<DataHistory>DontUse</DataHistory>
 				</Properties>
 			</Attribute>
 			<Attribute uuid="f42ef652-64c2-4a7a-997b-d86d1f6754fa">
