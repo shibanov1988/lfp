@@ -48,31 +48,33 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаРасписание" id="28">
-			<Group>AlwaysHorizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаРасписаниеРасширеннаяПодсказка" id="29"/>
+		<Button name="НастроитьРасписание" id="19">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.НастроитьРасписание</CommandName>
+			<ExtendedTooltip name="НастроитьРасписаниеРасширеннаяПодсказка" id="20"/>
+		</Button>
+		<Table name="Расписание" id="31">
+			<DataPath>Объект.Расписание</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты, посчитанные по расписанию</v8:content>
+				</v8:item>
+			</Title>
+			<ReadOnly>true</ReadOnly>
+			<Height>5</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
 			<ChildItems>
-				<InputField name="ОписаниеРасписания" id="16">
-					<DataPath>ОписаниеРасписания</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Расписание</v8:content>
-						</v8:item>
-					</Title>
-					<ReadOnly>true</ReadOnly>
-					<ContextMenu name="ОписаниеРасписанияКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ОписаниеРасписанияРасширеннаяПодсказка" id="18"/>
+				<InputField name="РасписаниеДата" id="32">
+					<DataPath>Объект.Расписание.Дата</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасписаниеДатаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="РасписаниеДатаРасширеннаяПодсказка" id="34"/>
 				</InputField>
-				<Button name="НастроитьРасписание" id="19">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.НастроитьРасписание</CommandName>
-					<ExtendedTooltip name="НастроитьРасписаниеРасширеннаяПодсказка" id="20"/>
-				</Button>
 			</ChildItems>
-		</UsualGroup>
+			<ContextMenu name="РасписаниеКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="36"/>
+		</Table>
 		<CheckBoxField name="Активно" id="21">
 			<DataPath>Объект.Активно</DataPath>
 			<CheckBoxType>Auto</CheckBoxType>
@@ -94,21 +96,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
-		</Attribute>
-		<Attribute name="ОписаниеРасписания" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Расписание</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>150</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
