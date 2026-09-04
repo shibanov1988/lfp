@@ -33,10 +33,10 @@
 			</Synonym>
 			<Comment/>
 			<Hierarchical>true</Hierarchical>
-			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<HierarchyType>HierarchyItems</HierarchyType>
 			<LimitLevelCount>false</LimitLevelCount>
 			<LevelCount>2</LevelCount>
-			<FoldersOnTop>true</FoldersOnTop>
+			<FoldersOnTop>false</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
