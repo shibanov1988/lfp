@@ -148,7 +148,9 @@
 			<Metadata name="InformationRegister.КурсыВалют.Resource.Кратность" id="ada890dd-0408-4544-bbb3-7f2b519c22d6"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="4ef8c377-e8a7-45fd-9ce3-39ffb40b9df4" configVersion="edcea24b713feb40ae52da4a11b70c7400000000"/>
-		<Metadata name="Report.ПлатежныйКалендарь" id="a2794f83-e336-481d-9eeb-f0b418dd57dc" configVersion="7ae7d6459c1d8642a65f0ef41e85180700000000"/>
+		<Metadata name="Report.ПлатежныйКалендарь" id="a2794f83-e336-481d-9eeb-f0b418dd57dc" configVersion="20e6ddd042eeb849aa177b816770c2af00000000"/>
+		<Metadata name="Report.ПлатежныйКалендарь.Template.ОсновнаяСхемаКомпоновкиДанных" id="003a4f02-d134-4132-9513-0ec0ca1dfd4a" configVersion="03afcda44168904bb314acbe27f1486300000000"/>
+		<Metadata name="Report.ПлатежныйКалендарь.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="003a4f02-d134-4132-9513-0ec0ca1dfd4a.0" configVersion="98993eb0dcf35b40a0928e56ed06554300000000"/>
 		<Metadata name="Subsystem.ЛФП" id="d2f41473-3397-4a39-a6fc-d9528c9673d1" configVersion="24f13fe106d9024fa4ebfab793d0a64b00000000"/>
 		<Metadata name="Subsystem.НСИ" id="e3e0523c-2882-47e8-93c7-61516fce4946" configVersion="4bbdc52b86291948922c7c59b71f0d6400000000"/>
 	</ConfigVersions>
