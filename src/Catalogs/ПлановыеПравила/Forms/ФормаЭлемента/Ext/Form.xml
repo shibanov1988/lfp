@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
@@ -54,6 +54,9 @@
 			<ExtendedTooltip name="НастроитьРасписаниеРасширеннаяПодсказка" id="20"/>
 		</Button>
 		<Table name="Расписание" id="31">
+			<ReadOnly>true</ReadOnly>
+			<Height>5</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
 			<DataPath>Объект.Расписание</DataPath>
 			<Title>
 				<v8:item>
@@ -61,9 +64,34 @@
 					<v8:content>Даты, посчитанные по расписанию</v8:content>
 				</v8:item>
 			</Title>
-			<ReadOnly>true</ReadOnly>
-			<Height>5</Height>
-			<AutoMaxHeight>false</AutoMaxHeight>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РасписаниеКонтекстноеМеню" id="35"/>
+			<AutoCommandBar name="РасписаниеКоманднаяПанель" id="37"/>
+			<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="36"/>
+			<SearchStringAddition name="РасписаниеСтрокаПоиска" id="38">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеСтрокаПоискаКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="РасписаниеСтрокаПоискаРасширеннаяПодсказка" id="40"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РасписаниеСостояниеПросмотра" id="41">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеСостояниеПросмотраКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="РасписаниеСостояниеПросмотраРасширеннаяПодсказка" id="43"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РасписаниеУправлениеПоиском" id="44">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеУправлениеПоискомКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="РасписаниеУправлениеПоискомРасширеннаяПодсказка" id="46"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="РасписаниеДата" id="32">
 					<DataPath>Объект.Расписание.Дата</DataPath>
@@ -72,8 +100,6 @@
 					<ExtendedTooltip name="РасписаниеДатаРасширеннаяПодсказка" id="34"/>
 				</InputField>
 			</ChildItems>
-			<ContextMenu name="РасписаниеКонтекстноеМеню" id="35"/>
-			<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="36"/>
 		</Table>
 		<CheckBoxField name="Активно" id="21">
 			<DataPath>Объект.Активно</DataPath>

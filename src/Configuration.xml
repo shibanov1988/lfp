@@ -248,10 +248,10 @@
 			<Subsystem>НСИ</Subsystem>
 			<Subsystem>ЛФП</Subsystem>
 			<CommonModule>ЛФПСервер</CommonModule>
-			<Catalog>Пользователи</Catalog>
 			<Constant>ТекущийПользователь</Constant>
-			<Catalog>Валюты</Catalog>
 			<Constant>ОсновнаяВалюта</Constant>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Валюты</Catalog>
 			<Catalog>Цели</Catalog>
 			<Catalog>КошелькиИСчета</Catalog>
 			<Catalog>Инвестиции</Catalog>
@@ -261,6 +261,7 @@
 			<Document>ИзменениеБаланса</Document>
 			<Document>ПлановаяОперация</Document>
 			<Enum>ПриходРасход</Enum>
+			<Report>ПлатежныйКалендарь</Report>
 			<DataProcessor>ЛичныйФинансовыйПлан</DataProcessor>
 			<DataProcessor>СозданиеПлановыхОпераций</DataProcessor>
 			<DataProcessor>ПлатежныйКалендарь</DataProcessor>

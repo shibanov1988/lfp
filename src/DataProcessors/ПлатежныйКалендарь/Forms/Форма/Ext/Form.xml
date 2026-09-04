@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -32,6 +32,9 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="ТаблицаПоСтатьям" id="9">
+			<ReadOnly>true</ReadOnly>
+			<Height>6</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
 			<DataPath>Объект.ТаблицаПоСтатьям</DataPath>
 			<Title>
 				<v8:item>
@@ -39,9 +42,34 @@
 					<v8:content>Структура доходов и расходов за период</v8:content>
 				</v8:item>
 			</Title>
-			<ReadOnly>true</ReadOnly>
-			<Height>6</Height>
-			<AutoMaxHeight>false</AutoMaxHeight>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаПоСтатьямКонтекстноеМеню" id="19"/>
+			<AutoCommandBar name="ТаблицаПоСтатьямКоманднаяПанель" id="42"/>
+			<ExtendedTooltip name="ТаблицаПоСтатьямРасширеннаяПодсказка" id="20"/>
+			<SearchStringAddition name="ТаблицаПоСтатьямСтрокаПоиска" id="43">
+				<AdditionSource>
+					<Item>ТаблицаПоСтатьям</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПоСтатьямСтрокаПоискаКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ТаблицаПоСтатьямСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПоСтатьямСостояниеПросмотра" id="46">
+				<AdditionSource>
+					<Item>ТаблицаПоСтатьям</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПоСтатьямСостояниеПросмотраКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ТаблицаПоСтатьямСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПоСтатьямУправлениеПоиском" id="49">
+				<AdditionSource>
+					<Item>ТаблицаПоСтатьям</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПоСтатьямУправлениеПоискомКонтекстноеМеню" id="50"/>
+				<ExtendedTooltip name="ТаблицаПоСтатьямУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="ТаблицаПоСтатьямСтатьяДДС" id="10">
 					<DataPath>Объект.ТаблицаПоСтатьям.СтатьяДДС</DataPath>
@@ -62,10 +90,11 @@
 					<ExtendedTooltip name="ТаблицаПоСтатьямСуммаРасширеннаяПодсказка" id="18"/>
 				</InputField>
 			</ChildItems>
-			<ContextMenu name="ТаблицаПоСтатьямКонтекстноеМеню" id="19"/>
-			<ExtendedTooltip name="ТаблицаПоСтатьямРасширеннаяПодсказка" id="20"/>
 		</Table>
 		<Table name="ТаблицаОпераций" id="21">
+			<ReadOnly>true</ReadOnly>
+			<Height>10</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
 			<DataPath>Объект.ТаблицаОпераций</DataPath>
 			<Title>
 				<v8:item>
@@ -73,9 +102,34 @@
 					<v8:content>Календарь платежей</v8:content>
 				</v8:item>
 			</Title>
-			<ReadOnly>true</ReadOnly>
-			<Height>10</Height>
-			<AutoMaxHeight>false</AutoMaxHeight>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаОперацийКонтекстноеМеню" id="40"/>
+			<AutoCommandBar name="ТаблицаОперацийКоманднаяПанель" id="52"/>
+			<ExtendedTooltip name="ТаблицаОперацийРасширеннаяПодсказка" id="41"/>
+			<SearchStringAddition name="ТаблицаОперацийСтрокаПоиска" id="53">
+				<AdditionSource>
+					<Item>ТаблицаОпераций</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОперацийСтрокаПоискаКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ТаблицаОперацийСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОперацийСостояниеПросмотра" id="56">
+				<AdditionSource>
+					<Item>ТаблицаОпераций</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОперацийСостояниеПросмотраКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="ТаблицаОперацийСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОперацийУправлениеПоиском" id="59">
+				<AdditionSource>
+					<Item>ТаблицаОпераций</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОперацийУправлениеПоискомКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ТаблицаОперацийУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+			</SearchControlAddition>
 			<ChildItems>
 				<InputField name="ТаблицаОперацийДата" id="22">
 					<DataPath>Объект.ТаблицаОпераций.Дата</DataPath>
@@ -114,8 +168,6 @@
 					<ExtendedTooltip name="ТаблицаОперацийОстатокРасширеннаяПодсказка" id="39"/>
 				</InputField>
 			</ChildItems>
-			<ContextMenu name="ТаблицаОперацийКонтекстноеМеню" id="40"/>
-			<ExtendedTooltip name="ТаблицаОперацийРасширеннаяПодсказка" id="41"/>
 		</Table>
 	</ChildItems>
 	<Attributes>
