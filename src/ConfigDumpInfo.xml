@@ -74,8 +74,8 @@
 		<Metadata name="Catalog.Цели.Form.ФормаЭлемента" id="04f26c1a-e4ef-4aaf-adfe-83661fe3463f" configVersion="d4d71007743cbd4d8f97d93df8f98bce00000000"/>
 		<Metadata name="Catalog.Цели.Form.ФормаЭлемента.Form" id="04f26c1a-e4ef-4aaf-adfe-83661fe3463f.0" configVersion="f0a07dc3e60ec64ba1922156f8d9bf8000000000"/>
 		<Metadata name="Catalog.Цели.ObjectModule" id="51686b64-94eb-4754-8e8a-6070ee73e009.0" configVersion="e0054653e1433f49aaadbbbaf48d042200000000"/>
-		<Metadata name="CommonModule.ЛФПСервер" id="dd29d50e-114e-42f5-9350-52e069e66498" configVersion="c152b16b890b7948953c2b1ed0fe746f00000000"/>
-		<Metadata name="CommonModule.ЛФПСервер.Module" id="dd29d50e-114e-42f5-9350-52e069e66498.0" configVersion="ac096eb087e5c5478c33ce80a0c8590d00000000"/>
+		<Metadata name="CommonModule.ЛФПСервер" id="dd29d50e-114e-42f5-9350-52e069e66498" configVersion="51b0ee6751c7ef458cb18354ee50f03a00000000"/>
+		<Metadata name="CommonModule.ЛФПСервер.Module" id="dd29d50e-114e-42f5-9350-52e069e66498.0" configVersion="d60826a00a47fa4db6783606e45e2c0d00000000"/>
 		<Metadata name="Configuration.Конфигурация" id="194a9b61-5bbc-4afa-b7bd-281a9f91f573" configVersion="abbee7d40551d8449b995720b12f641300000000"/>
 		<Metadata name="Constant.ОсновнаяВалюта" id="e8413b71-778e-4997-af56-bb6f834d3b9c" configVersion="dff5d22baa931d438a5ab3ff936c1e4800000000"/>
 		<Metadata name="Constant.ТекущийПользователь" id="4db11227-978f-4eb5-ba17-a2f6fc7c54f6" configVersion="74737b3bc72163458682fbf72d0ec54a00000000"/>
@@ -149,8 +149,8 @@
 		</Metadata>
 		<Metadata name="Language.Русский" id="4ef8c377-e8a7-45fd-9ce3-39ffb40b9df4" configVersion="edcea24b713feb40ae52da4a11b70c7400000000"/>
 		<Metadata name="Report.ПлатежныйКалендарь" id="a2794f83-e336-481d-9eeb-f0b418dd57dc" configVersion="20e6ddd042eeb849aa177b816770c2af00000000"/>
-		<Metadata name="Report.ПлатежныйКалендарь.Template.ОсновнаяСхемаКомпоновкиДанных" id="003a4f02-d134-4132-9513-0ec0ca1dfd4a" configVersion="03afcda44168904bb314acbe27f1486300000000"/>
-		<Metadata name="Report.ПлатежныйКалендарь.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="003a4f02-d134-4132-9513-0ec0ca1dfd4a.0" configVersion="98993eb0dcf35b40a0928e56ed06554300000000"/>
+		<Metadata name="Report.ПлатежныйКалендарь.Template.ОсновнаяСхемаКомпоновкиДанных" id="003a4f02-d134-4132-9513-0ec0ca1dfd4a" configVersion="f0cc3e63ffa10544a6165678c8c02dfb00000000"/>
+		<Metadata name="Report.ПлатежныйКалендарь.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="003a4f02-d134-4132-9513-0ec0ca1dfd4a.0" configVersion="4f8ff1e63948cc4ebe8b742f301ba19800000000"/>
 		<Metadata name="Subsystem.ЛФП" id="d2f41473-3397-4a39-a6fc-d9528c9673d1" configVersion="24f13fe106d9024fa4ebfab793d0a64b00000000"/>
 		<Metadata name="Subsystem.НСИ" id="e3e0523c-2882-47e8-93c7-61516fce4946" configVersion="4bbdc52b86291948922c7c59b71f0d6400000000"/>
 	</ConfigVersions>

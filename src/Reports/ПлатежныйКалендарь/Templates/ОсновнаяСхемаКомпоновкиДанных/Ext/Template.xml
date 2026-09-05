@@ -7,20 +7,19 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПриход</dataPath>
-			<field>СуммаПриход</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Период</dataPath>
 			<field>Период</field>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаОборот</dataPath>
-			<field>СуммаОборот</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СтатьяДДС</dataPath>
@@ -30,24 +29,8 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаРасход</dataPath>
-			<field>СуммаРасход</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Валюта</dataPath>
 			<field>Валюта</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаВОсновнойВалютеОборот</dataPath>
-			<field>СуммаВОсновнойВалютеОборот</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаВОсновнойВалютеПриход</dataPath>
-			<field>СуммаВОсновнойВалютеПриход</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаВОсновнойВалютеРасход</dataPath>
-			<field>СуммаВОсновнойВалютеРасход</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Год</dataPath>
@@ -58,10 +41,6 @@
 					<v8:content>Год</v8:content>
 				</v8:item>
 			</title>
-			<role>
-				<dcscom:periodNumber>2</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Формат</dcscor:parameter>
@@ -83,10 +62,6 @@
 					<v8:content>Месяц</v8:content>
 				</v8:item>
 			</title>
-			<role>
-				<dcscom:periodNumber>3</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Формат</dcscor:parameter>
@@ -99,44 +74,59 @@
 				</dcscor:item>
 			</appearance>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборот</dataPath>
+			<field>Оборот</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборот</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приход</dataPath>
+			<field>Приход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Расход</dataPath>
+			<field>Расход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	НАЧАЛОПЕРИОДА(ПлановыеДвиженияОбороты.Период, ГОД) КАК Год,
 	НАЧАЛОПЕРИОДА(ПлановыеДвиженияОбороты.Период, МЕСЯЦ) КАК Месяц,
 	ПлановыеДвиженияОбороты.Период КАК Период,
 	ПлановыеДвиженияОбороты.СтатьяДДС КАК СтатьяДДС,
-	ПлановыеДвиженияОбороты.СуммаОборот КАК СуммаОборот,
-	ПлановыеДвиженияОбороты.СуммаПриход КАК СуммаПриход,
-	ПлановыеДвиженияОбороты.СуммаРасход КАК СуммаРасход,
-	ПлановыеДвиженияОбороты.СуммаВОсновнойВалютеОборот КАК СуммаВОсновнойВалютеОборот,
-	ПлановыеДвиженияОбороты.СуммаВОсновнойВалютеПриход КАК СуммаВОсновнойВалютеПриход,
-	ПлановыеДвиженияОбороты.СуммаВОсновнойВалютеРасход КАК СуммаВОсновнойВалютеРасход
+	ПлановыеДвиженияОбороты.СуммаВОсновнойВалютеОборот КАК Оборот,
+	ПлановыеДвиженияОбороты.СуммаВОсновнойВалютеПриход КАК Приход,
+	ПлановыеДвиженияОбороты.СуммаВОсновнойВалютеРасход КАК Расход
 ИЗ
-	РегистрНакопления.ПлановыеДвижения.Обороты(&amp;НачалоПериода, &amp;КонецПериода, День, ) КАК ПлановыеДвиженияОбороты</query>
+	РегистрНакопления.ПлановыеДвижения.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК ПлановыеДвиженияОбороты</query>
 	</dataSet>
 	<totalField>
-		<dataPath>СуммаВОсновнойВалютеОборот</dataPath>
-		<expression>Сумма(СуммаВОсновнойВалютеОборот)</expression>
+		<dataPath>Оборот</dataPath>
+		<expression>Сумма(Оборот)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>СуммаВОсновнойВалютеПриход</dataPath>
-		<expression>Сумма(СуммаВОсновнойВалютеПриход)</expression>
+		<dataPath>Приход</dataPath>
+		<expression>Сумма(Приход)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>СуммаВОсновнойВалютеРасход</dataPath>
-		<expression>Сумма(СуммаВОсновнойВалютеРасход)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаОборот</dataPath>
-		<expression>Сумма(СуммаОборот)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаПриход</dataPath>
-		<expression>Сумма(СуммаПриход)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаРасход</dataPath>
-		<expression>Сумма(СуммаРасход)</expression>
+		<dataPath>Расход</dataPath>
+		<expression>Сумма(Расход)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -204,22 +194,13 @@
 					<dcsset:field>СтатьяДДС</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаВОсновнойВалютеОборот</dcsset:field>
+					<dcsset:field>Приход</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаВОсновнойВалютеПриход</dcsset:field>
+					<dcsset:field>Расход</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаВОсновнойВалютеРасход</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаОборот</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаПриход</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаРасход</dcsset:field>
+					<dcsset:field>Оборот</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -279,29 +260,12 @@
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
-						<dcsset:groupItems>
-							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>СтатьяДДС</dcsset:field>
-								<dcsset:groupType>Hierarchy</dcsset:groupType>
-								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-							</dcsset:item>
-						</dcsset:groupItems>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
 						<dcsset:selection>
 							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 						</dcsset:selection>
-						<dcsset:item xsi:type="dcsset:StructureItemGroup">
-							<dcsset:order>
-								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-							</dcsset:order>
-							<dcsset:selection>
-								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-							</dcsset:selection>
-						</dcsset:item>
 					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
